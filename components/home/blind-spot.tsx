@@ -240,7 +240,7 @@ function PhoneBlock() {
       style={{ opacity, y, scale }}
       className="mt-2 w-full max-w-[900px] rounded-[32px] bg-ink px-6 py-12 text-center text-white sm:px-12 sm:py-16 lg:mt-8"
     >
-      <h3 className={displayType}>Phone</h3>
+      <h3 className={displayType}>Phone calls</h3>
       <p className="mt-6 text-[17px] text-white/70 sm:text-lg">
         <span className="font-semibold tabular-nums text-white">
           <Count focus={focus} to={phone.value} range={[0.25, 1]} />

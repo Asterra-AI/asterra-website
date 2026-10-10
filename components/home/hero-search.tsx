@@ -4,6 +4,8 @@ import { Search } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 import { useState, type FormEvent } from "react";
 import { springs } from "@/lib/motion";
+import { heroName } from "@/lib/hero-name";
+import { scrollToElement } from "@/lib/scroll";
 import { HERO_SUBMIT_EVENT, TOY_ANCHOR } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -16,11 +18,10 @@ export function HeroSearch({ className }: { className?: string }) {
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const name = value.trim();
+    heroName.set(name);
     window.dispatchEvent(new CustomEvent<string>(HERO_SUBMIT_EVENT, { detail: name }));
-    document.getElementById(TOY_ANCHOR)?.scrollIntoView({
-      behavior: reduceMotion ? "auto" : "smooth",
-      block: "start",
-    });
+    const toy = document.getElementById(TOY_ANCHOR);
+    if (toy) scrollToElement(toy, { offset: 64, instant: !!reduceMotion });
   }
 
   return (

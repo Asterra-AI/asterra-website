@@ -45,7 +45,7 @@ public/brand/         logos · public/ images per section as they arrive
 - Hero: painted sky, rotating phrase, glass search bar, submit scrolls to `#toy`.
 
 **Phase 1 · Home page, section by section**
-1. Hero ✅ · 2. Blind spot ✅ · 3. Hear it for yourself (the toy) · 4. One system for every call (bento)
+1. Hero ✅ · 2. Blind spot ✅ · 3. Hear it for yourself (the toy, mocked call) ✅ · 4. One system for every call (bento)
 5. Made for the way you run (tabs) · 6. Dashboard (dark) · 7. Proof · 8. Accuracy (dark)
 9. Getting started · 10. Pricing · 11. FAQ · 12. Final call to action (dark) · Footer
 

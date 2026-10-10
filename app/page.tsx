@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { BlindSpot, Hero } from "@/components/home";
-import { site, TOY_ANCHOR } from "@/lib/site";
+import { BlindSpot, HearIt, Hero } from "@/components/home";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: `Voice AI for Restaurants · ${site.name}` },
@@ -13,8 +13,7 @@ export default function HomePage() {
     <>
       <Hero />
       <BlindSpot />
-      {/* Home 2–12 land here, section by section. The toy section keeps this id. */}
-      <section id={TOY_ANCHOR} aria-hidden className="min-h-screen scroll-mt-20 bg-white" />
+      <HearIt />
     </>
   );
 }
